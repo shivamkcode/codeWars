@@ -1,1 +1,1 @@
-const noSpaces = x => x.split(' ').join('')
+const noSpaces = x => x.split(' ').join('') 
