@@ -12,4 +12,4 @@ function getCount(str) {
       counter ++
       }
     }return counter
-}
+} 
