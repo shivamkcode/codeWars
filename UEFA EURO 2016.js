@@ -12,5 +12,4 @@ function uefaEuro2016(teams, scores){
          winner =  "teams played draw."
      }
     return `At match ${teams[0]} - ${teams[1]}, ${winner}`
-    
 }
