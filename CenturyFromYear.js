@@ -10,3 +10,10 @@ Examples
 1601 --> 17
 2000 --> 20*/
 
+function century(year) {
+  // Finish this :)
+  return Math.floor(year % 100 === 0 ? year/100 : (year/100 + 1)  )
+}
+
+//Best available solution
+
