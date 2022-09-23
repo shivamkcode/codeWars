@@ -16,3 +16,7 @@ function litres(time) {
   return Math.floor(time/2);
 }
 
+//Other solution
+function litres(time) {
+  return time>>1
+}
