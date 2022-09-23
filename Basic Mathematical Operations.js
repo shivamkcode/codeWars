@@ -13,3 +13,19 @@ function basicOp(op, v1, v2) {
     return eval(v1 + op + v2)
 }
 
+//Other
+
+function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+':
+            return value1 + value2;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return 0;
+    }
+}
