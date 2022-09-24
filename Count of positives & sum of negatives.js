@@ -8,10 +8,19 @@ Example
 For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].*/
 
 function countPositivesSumNegatives(input) {
-  let p = 0
-  let n = 0
-  let arr = []
-  input.forEach(x => x>0 ? p += 1 : n += x)
-  return [p,n]
+    let p = 0
+    let n = 0
+    let arr = []
+    if (input === undefined) {
+        return input
+    }
+    if (input === null) {
+        return arr
+    }
+    input.forEach(x => x > 0 ? p += 1: n += x)
+    if (input.length >= 1) {
+        return [p,
+            n]} else {
+        return input
+    }
 }
-
