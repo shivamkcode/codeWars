@@ -12,3 +12,7 @@ Input constraints:
 
 0 <= h <= 23*/
 
+function past(h, m, s){
+   return (h*3600 + m*60 + s) * 1000
+}
+
