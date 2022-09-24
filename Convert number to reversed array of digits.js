@@ -9,3 +9,7 @@ function digitize(n) {
     let str = n.toString().split('').reverse()
     return str.map(e => +e)
 }
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
