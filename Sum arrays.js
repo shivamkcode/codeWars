@@ -9,3 +9,9 @@ function sum (numbers) {
     numbers.forEach(x => sum += x)
   return sum
 };
+
+
+function sum(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
+
