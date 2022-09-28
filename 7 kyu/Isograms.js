@@ -4,3 +4,8 @@ Example: (Input --> Output)
 
 "Dermatoglyphics" --> true "aba" --> false "moOse" --> false (ignore letter case)*/
 
+function isIsogram(str) {
+    let array = str.toLowerCase().split('')
+    return array.filter((x, i, arr) => arr.indexOf(x.toLowerCase()) == i).length == array.length
+}
+
