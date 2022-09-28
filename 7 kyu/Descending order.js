@@ -11,3 +11,7 @@ function descendingOrder(n){
   let str = String(n).split('').sort((a, b) => +b - +a).join('')
   return Number(str)
 }
+
+function descendingOrder(n) {
+  return +n.toString().split('').sort().reverse().join('');
+}
