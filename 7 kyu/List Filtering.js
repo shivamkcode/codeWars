@@ -10,3 +10,6 @@ function filter_list(l) {
   return l.filter(x => x !== String(x) )
 }
 
+function filter_list(l) {
+  return l.filter(x => typeof(x) =="number");
+}
