@@ -6,3 +6,12 @@ Examples (Input -> Output)
 * [42, 54, 65, 87, 0]             -> min = 0, max = 87
 * [5]*/
 
+var min = function(list){
+    
+    return Math.min(...list);
+}
+
+var max = function(list){
+    
+    return Math.max(...list);
+}
