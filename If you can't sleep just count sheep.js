@@ -11,4 +11,4 @@ var countSheep = function (num){
       }
     }
   return str
-}//it can be done
+}//it can be done without the if statement
