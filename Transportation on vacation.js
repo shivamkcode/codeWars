@@ -6,3 +6,15 @@ Every day you rent the car costs $40. If you rent the car for 7 or more days, yo
 
 Write a code that gives out the total amount for different days(d).*/
 
+function rentalCarCost(d) {
+  let m = 0
+  if(d < 3){
+    m = d * 40
+    }else if(d < 7){
+      m = d*40 - 20
+      }else{
+        m = d*40 - 50
+        }
+  return m
+}
+
