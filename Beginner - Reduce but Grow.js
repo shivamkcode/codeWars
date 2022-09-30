@@ -5,3 +5,5 @@
 function grow(x){
   return x.reduce((a,b) => a*b)
 }
+
+const grow=x=>eval(x.join("*"))
