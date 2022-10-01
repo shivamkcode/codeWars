@@ -13,3 +13,13 @@ there are 10 matches in the championship
 0 <= x <= 4
 0 <= y <= 4*/
 
+function points(games) {
+  let points = 0
+  games.forEach(x => {
+    +x[0] > +x[2]? points+= 3: 
+    +x[0] < +x[2]? points+= 0:
+    points += 1
+    })
+  return points
+}
+
