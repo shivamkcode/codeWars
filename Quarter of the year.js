@@ -4,3 +4,8 @@ For example: month 2 (February), is part of the first quarter; month 6 (June), i
 
 */
 
+const quarterOf = (month) => {
+  // Your code here
+  return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4
+}
+
