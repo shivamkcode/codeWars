@@ -18,3 +18,4 @@ function getGrade (s1, s2, s3) {
   'F'
 }
 
+const getGrade=(a,b,c)=>'FFFFFFDCBAA'.charAt((a+b+c)/3/10);
