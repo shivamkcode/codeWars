@@ -13,3 +13,6 @@ function accum(s) {
     return arr.map(e => e.charAt(0).toUpperCase() + e.substr(1)).join('-')
 }
 
+function accum(s) {
+  return s.split('').map((x, i) => (x.toUpperCase() + x.toLowerCase().repeat(i))).join('-');
+}
