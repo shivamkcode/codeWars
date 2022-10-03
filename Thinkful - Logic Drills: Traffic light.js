@@ -9,3 +9,9 @@ function updateLight(c) {
     return c === 'green' ? 'yellow':
     c === 'yellow' ? 'red': 'green'
 }
+
+const updateLight = current => ({
+  green: 'yellow',
+  yellow: 'red',
+  red: 'green',
+})[current]
