@@ -4,3 +4,6 @@ function removeExclamationMarks(s) {
   return s.split('!').join('');
 }
 
+const removeExclamationMarks = (s) => {
+  return s.split('').filter((letter) => letter !== '!').join('')
+}
