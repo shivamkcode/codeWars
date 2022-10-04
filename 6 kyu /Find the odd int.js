@@ -9,3 +9,15 @@ Examples
 [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).*/
 
+function findOdd(A) {
+    if (A.length === 1) {
+        return A[0]
+    }
+    for (let i = 0; i <= A.length; i++) {
+        let odd = 0
+        A.forEach(x => A[i] === x ? odd++: odd)
+        if (odd%2 === 1) {
+            return A[i]
+        }
+    }
+}
