@@ -10,3 +10,21 @@ Examples (a, b) --> output (explanation)
 (-1, 0) --> -1 (-1 + 0 = -1)
 (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)*/
 
+
+function getSum(a, b) {
+    let sum = 0
+    if (a === b) {
+        sum = a
+    }
+    if (a < b) {
+        for (i = a; i <= b; i++) {
+            sum += i
+        }
+    }
+    if (b < a) {
+        for (j = b; j <= a; j++) {
+            sum += j
+        }
+    }
+    return sum
+}
