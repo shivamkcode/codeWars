@@ -12,3 +12,7 @@ For example:
 
 5, 10, 2  -->  17*/
 
+function goals (l, c, ch) {
+  return l + c + ch
+}
+
