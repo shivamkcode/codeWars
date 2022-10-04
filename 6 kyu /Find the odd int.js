@@ -21,3 +21,10 @@ function findOdd(A) {
         }
     }
 }
+
+//ot
+
+function findOdd(A) {
+
+    return A.sort((a, b)=> a - b).reduce((a, b) => b - a)
+}
