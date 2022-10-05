@@ -18,3 +18,6 @@ function switchItUp(n){
   n == 8 ? 'Eight' : 
   n == 9 ? 'Nine' : 'Zero'
 }
+
+switchItUp=n=>["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][n]
+
