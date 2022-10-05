@@ -8,3 +8,5 @@ Examples (Input -> Output):
 function doubleChar(str) {
   return [...str].map(x => x.repeat(2)).join('')
 }
+
+const doubleChar = (str) => str.split("").map(c => c + c).join("");
