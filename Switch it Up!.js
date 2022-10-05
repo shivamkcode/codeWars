@@ -6,6 +6,8 @@ Output :: "One".
 
 If your language supports it, try using a switch statement.*/
 
+//Just sooo many good solutions
+
 function switchItUp(n){
 //Write your own Code!
   return n == 1 ? 'One' :
@@ -46,4 +48,8 @@ function switchItUp(number){
     default:
       return 'Unknown number';
   }
+}
+
+function switchItUp (number) {
+  return 'Zero One Two Three Four Five Six Seven Eight Nine'.split(' ')[number];
 }
