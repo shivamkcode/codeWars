@@ -13,3 +13,6 @@ function twiceAsOld(dad, son) {
     }
 }
 
+function twiceAsOld(dad, son) {
+  return dad < 2 * son ? 2 * son - dad : dad - 2* son
+}
