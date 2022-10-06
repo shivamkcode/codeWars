@@ -19,3 +19,10 @@ for (var i = 0; i < arr.length; i+=2){
 return newArr;
 }
 
+function removeEveryOther(arr){
+  //your code here
+  for (var i = 1; i < arr.length;i++){
+      arr.splice(i,1);
+  }
+  return arr;
+}
