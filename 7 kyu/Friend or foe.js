@@ -9,7 +9,17 @@ i.e.
 friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output.*/
 
-function friend(friends){
-   return friends.filter(x => x.length === 4)
+function friend(friends) {
+    return friends.filter(x => x.length === 4)
 }
 
+function friend(friends) {
+    let outArr = [];
+
+    friends.forEach((item) => {
+        if (item.length == 4) {
+            outArr.push(item);
+        }
+    });
+    return outArr;
+}
