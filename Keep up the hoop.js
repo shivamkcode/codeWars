@@ -10,3 +10,14 @@ function hoopCount (n) {
    return n >= 10 ?  "Great, now move on to tricks" :  "Keep at it until you get it"
 }
 
+//OR
+
+const COUNT_AIM = 10
+const HOOP_MESSAGES = {
+  UNDER_AIM: 'Keep at it until you get it',
+  MET_AIM: 'Great, now move on to tricks'
+}
+
+const hoopCount = count => count >= COUNT_AIM
+  ? HOOP_MESSAGES.MET_AIM
+  : HOOP_MESSAGES.UNDER_AIM
