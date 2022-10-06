@@ -3,3 +3,6 @@ In other words , try every combination of a,b,c with [*+()] , and return the Max
 Example
 With the numbers are 1, 2 and 3 , here are some ways of placing signs and brackets:*/
 
+function expressionMatter(a, b, c) {
+  return Math.max(a+b+c, a*b*c, (a+b)*c, a*(b+c));
+}
