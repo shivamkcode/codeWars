@@ -15,3 +15,7 @@ function enough(cap, on, wait) {
   let num = cap - on - wait
   return num >= 0 ? 0 : -num
 }
+
+function enough(cap, on, wait) {
+  return Math.max(wait + on - cap, 0);
+}
