@@ -4,9 +4,19 @@
 
 function isTriangle(a,b,c)
 {
-  if(a * b * c <= 0){
-    return false
+    //Works 
+  /*if(a * b * c <= 0){
+    return false*/
     }else
    return b + c > a && a + c > b && a + b > c;
 }
 
+var isTriangle = (a,b,c) => Math.max(a,b,c)<(a+b+c)/2 
+
+
+function isTriangle(a,b,c)
+{
+  [a, b, c] = [a, b, c].sort((x, y) => x-y);
+  
+  return a+b > c;
+}
