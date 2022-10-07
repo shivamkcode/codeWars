@@ -12,3 +12,9 @@ Define String.prototype.toAlternatingCase (or a similar function/method such as 
 "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 As usual, your function/method should be pure, i.e. it should not mutate the original string.*/
 
+String.prototype.toAlternatingCase = function () {
+  let str = this.toString().split('')
+  let arr = str.map(x => x === x.toLowerCase() ? x.toUpperCase() : x.toLowerCase())
+  return arr.join('')
+}
+
