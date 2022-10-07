@@ -2,21 +2,23 @@
 
 (In this case, all triangles must have surface greater than 0 to be accepted).*/
 
-function isTriangle(a,b,c)
-{
-    //Works 
-  /*if(a * b * c <= 0){
-    return false*/
-    }else
-   return b + c > a && a + c > b && a + b > c;
+function isTriangle(a, b, c) {
+    //Works even without this
+    /*if(a * b * c <= 0){
+    return false}*/
+
+    return b + c > a && a + c > b && a + b > c;
 }
 
-var isTriangle = (a,b,c) => Math.max(a,b,c)<(a+b+c)/2 
+var isTriangle = (a, b, c) => Math.max(a, b, c) < (a+b+c)/2
 
 
-function isTriangle(a,b,c)
-{
-  [a, b, c] = [a, b, c].sort((x, y) => x-y);
-  
-  return a+b > c;
+function isTriangle(a, b, c) {
+    [a,
+        b,
+        c] = [a,
+        b,
+        c].sort((x, y) => x-y);
+
+    return a+b > c;
 }
