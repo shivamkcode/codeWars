@@ -2,3 +2,11 @@
 
 (In this case, all triangles must have surface greater than 0 to be accepted).*/
 
+function isTriangle(a,b,c)
+{
+  if(a * b * c <= 0){
+    return false
+    }else
+   return b + c > a && a + c > b && a + b > c;
+}
+
