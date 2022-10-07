@@ -7,3 +7,7 @@ If a value is present in b, all of its occurrences must be removed from the othe
 
 arrayDiff([1,2,2,2,3],[2]) == [1,3]*/
 
+function arrayDiff(a, b) {
+  return a.filter((x,i) => !b.includes(x))
+}
+
