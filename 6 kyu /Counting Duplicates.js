@@ -10,3 +10,9 @@ Example
 "aA11" -> 2 # 'a' and '1'
 "ABBA" -> 2 # 'A' and 'B' each occur twice*/
 
+function duplicationCount(text) {
+    return text.toLowerCase().split('').filter((val, i, arr) => {
+        return arr.indexOf(val) !== i && arr.lastIndexOf(val) === i;
+    }).length;
+}
+
