@@ -8,3 +8,9 @@ longest(a, b) -> "abcdefklmopqwxy"
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"*/
 
+function longest(s1, s2) {
+    let str = s1.concat(s2).split('').sort()
+    return str.map((x, i, arr) => {
+        return x === arr[i + 1] ? '': x
+    }).join('')
+}
