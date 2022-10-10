@@ -26,3 +26,9 @@ var humanYearsCatYearsDogYears = function(humanYears) {
     return [humanYear,cat,dog]
 }
 
+var humanYearsCatYearsDogYears = function(humanYears) {
+  if(humanYears >= 2) {
+    return [humanYears, 24 + (humanYears - 2) * 4, 24 + (humanYears - 2) * 5];
+  }
+  return [humanYears, 15, 15];
+};
