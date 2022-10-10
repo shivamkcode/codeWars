@@ -10,3 +10,7 @@ Notes:
 The first argument can be an empty string
 The second string argument will always be of length 1*/
 
+function strCount(str, l) {
+    let arr = [...str].filter(x => x.includes(l))
+    return arr.length
+}
