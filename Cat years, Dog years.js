@@ -23,6 +23,6 @@ var humanYearsCatYearsDogYears = function(humanYears) {
     humanYears === 2 ? 24: 24 + (humanYears - 2) * 4
     let dog = humanYears === 1 ? 15:
     humanYears === 2 ? 24: 24 + (humanYears - 2) * 5
-    return [humanYears…cat,
-        dog]
+    return [humanYear,cat,dog]
 }
+
