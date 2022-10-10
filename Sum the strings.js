@@ -12,3 +12,7 @@ Example: (Input1, Input2 -->Output)
 function sumStr(a,b) {
   return `${+a + +b}`
 }
+
+function sumStr(a,b) {
+  return (+a+ +b)+''  
+}
