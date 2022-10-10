@@ -16,3 +16,7 @@ function sumStr(a,b) {
 function sumStr(a,b) {
   return (+a+ +b)+''  
 }
+
+function sumStr(a,b) {
+  return String(Number(a)+Number(b));
+}
