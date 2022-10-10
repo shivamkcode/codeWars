@@ -14,3 +14,7 @@ function strCount(str, l) {
     let arr = [...str].filter(x => x.includes(l))
     return arr.length
 }
+
+function strCount(str, letter){  
+  return str.split(letter).length-1
+}
