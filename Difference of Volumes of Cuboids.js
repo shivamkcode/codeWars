@@ -6,3 +6,8 @@ Your function will be tested with pre-made examples as well as random ones.
 
 If you can, try writing it in one line of code.*/
 
+function findDifference(a, b) {
+  let result = (a.reduce((a,b) => a*b) - b.reduce((a,b) => a*b))
+  return result > 0 ? result : -result 
+}
+
