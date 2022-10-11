@@ -8,3 +8,12 @@ ball2 = new Ball("super");
 ball1.ballType     //=> "regular"
 ball2.ballType     //=> "super"*/
 
+var Ball = function(ballType) {
+    if (typeof ballType === "string") {
+        this.ballType = ballType;
+    } else this.ballType = "regular";
+};
+
+var Ball = function(ballType) {
+  this.ballType = ballType || 'regular';
+};
