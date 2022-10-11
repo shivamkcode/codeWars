@@ -10,3 +10,7 @@ Examples:(Input1, Input2 --> Output (explanation)))
 var addBinary = (a, b) => {
     return (BigInt(a) + BigInt(b)).toString(2);
 };
+
+function addBinary(a,b) {
+   return (a + b).toString(2)
+}
