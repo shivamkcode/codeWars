@@ -30,3 +30,13 @@ function alphabetPosition(text) {
 
   return result.slice(0, result.length-1);
 }
+
+function alphabetPosition(text) {
+  const letters = 'abcdefghijklmnopqrstuvwxyz';
+  
+  return text.toLowerCase()
+             .split('')
+             .filter(t => letters.indexOf(t) > -1)
+             .map(t => letters.indexOf(t)+1 || '')
+             .join(' ');
+}
