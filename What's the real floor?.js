@@ -16,3 +16,8 @@ Examples
 15  =>  13
 -3  =>  -3*/
 
+function getRealFloor(n) {
+  return n <= 0 ? n :
+  n < 13 ? n - 1 : n - 2
+}
+
