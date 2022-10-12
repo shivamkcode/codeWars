@@ -23,3 +23,9 @@ function peopleWithAgeDrink(old) {
     old < 18 ? 'drink coke':
     old < 21 ? 'drink beer': 'drink whisky'
 };
+
+const peopleWithAgeDrink = a => {
+  let drink = ['toddy','coke','beer','whisky'],
+      n = a>20?3: a>17?2: a>13?1:0;
+  return `drink ${drink[n]}`
+}
