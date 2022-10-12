@@ -16,3 +16,5 @@ function arr(n) {
     }
     return arr
 }
+
+const arr = n => Array.from({length: n}, (_, i) => i);
