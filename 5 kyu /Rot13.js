@@ -6,6 +6,18 @@ function rot13(message) {
     let charCap = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
     let char = 'abcdefghijklmnopqrstuvwxyz'.split('')
     return [...message].map(x => x === x.toLowerCase() ? (char.indexOf(x) > -1 ? char[(char.indexOf(x) + 13) < char.length ? (char.indexOf(x) + 13): (char.indexOf(x) - 13)]: x):
-        
+
         (charCap.indexOf(x) > -1 ? charCap[(charCap.indexOf(x) + 13) < charCap.length ? (charCap.indexOf(x) + 13): (charCap.indexOf(x) - 13)]: x)).join('')
+}
+
+function rot13(message) {
+    return message.split('').map(l => {
+        let charCode = l.charCodeAt(0);
+        if (charCode >= 97 && charCode <= 122) {
+            charCode = (charCode - 97 + 13) % 26 + 97;
+        } else if (charCode >= 65 && charCode <= 90) {
+            charCode = (charCode - 65 + 13) % 26 + 65;
+        }
+        return String.fromCharCode(charCode);
+    }).join('');
 }
