@@ -13,3 +13,9 @@ printer_error(s) => "0/14"
 
 s="aaaxbbbbyyhwawiwjjjwwm"
 printer_error(s) => "8/22"*/
+
+function printerError(s) {
+    let correct = 'abcdefghijklm'.split('')
+    let num = s.split('').filter(x => !correct.includes(x)).length
+    return `${num}/${s.length}`
+}
