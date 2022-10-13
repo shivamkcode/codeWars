@@ -15,3 +15,7 @@ function findNextSquare(sq) {
   // Return the next square if sq is a perfect square, -1 otherwise
   return sq % Math.sqrt(sq) === 0 ? ((Math.sqrt(sq)) + 1) ** 2 : -1
 }
+
+function findNextSquare(sq) {
+  return Math.sqrt(sq)%1? -1 : Math.pow(Math.sqrt(sq)+1,2);
+}
