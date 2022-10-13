@@ -19,3 +19,14 @@ function printerError(s) {
     let num = s.split('').filter(x => !correct.includes(x)).length
     return `${num}/${s.length}`
 }
+
+function printerError(s) {
+    // your code
+    var count = 0;
+    for (var i = 0; i < s.length; i++) {
+        if (s[i] > "m") {
+            count++;
+        }
+    }
+    return count+"/"+s.length;
+}
