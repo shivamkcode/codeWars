@@ -11,3 +11,4 @@ Calculate the sum of the numbers in the nth row of this triangle (starting at in
 1 -->  1
 2 --> 3 + 5 = 8*/
 
+let rowSumOddNumbers = n => n ** 3;
