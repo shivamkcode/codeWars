@@ -11,16 +11,16 @@ Calculate the sum of the numbers in the nth row of this triangle (starting at in
 1 -->  1
 2 --> 3 + 5 = 8*/
 
-let rowSumOddNumbers = n => n ** 3;
+let rowSumOddNumber = n => n ** 3;
+
 
 function rowSumOddNumbers(n) {
-  var start = n * n - n + 1;
-  var result = 0;  
-  
-  for(i = 0; i < n; i++)
-  {
-    result =  result + (start + (i*2));
-  }
-    
-   return result;
+    var start = n * n - n + 1;
+    var result = 0;
+
+    for (i = 0; i < n; i++) {
+        result = result + (start + (i*2));
+    }
+
+    return result;
 }
