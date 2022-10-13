@@ -11,3 +11,7 @@ Examples:(Input --> Output)
 625 --> 676
 114 --> -1 since 114 is not a perfect*/
 
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+  return sq % Math.sqrt(sq) === 0 ? ((Math.sqrt(sq)) + 1) ** 2 : -1
+}
