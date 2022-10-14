@@ -6,10 +6,12 @@ Examples:
 
 * With `name` = "john"  => return "Hello, John!"
 * With `name` = "aliCE" => return "Hello, Alice!"
-* With `name` not given 
+* With `name` not given
   or `name` = ""        => return "Hello, World!"*/
-  
-  function hello(n) {
-  return n ? `Hello, ${n.slice(0,1).toUpperCase()}${n.slice(1).toLowerCase()}!`: 'Hello, World!'
+
+function hello(n) {
+    return n ? `Hello, ${n.slice(0, 1).toUpperCase()}${n.slice(1).toLowerCase()}!`: 'Hello, World!'
 }
 
+const hello = s =>
+`Hello, ${s ? (s[0].toUpperCase() + s.slice(1).toLowerCase()): 'World'}!`;
