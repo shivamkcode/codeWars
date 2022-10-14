@@ -9,4 +9,7 @@ Examples:
 * With `name` not given 
   or `name` = ""        => return "Hello, World!"*/
   
-  
+  function hello(n) {
+  return n ? `Hello, ${n.slice(0,1).toUpperCase()}${n.slice(1).toLowerCase()}!`: 'Hello, World!'
+}
+
