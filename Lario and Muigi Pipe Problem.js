@@ -11,3 +11,10 @@ Given the a list of numbers, return a fixed list so that the values increment by
 Example
 Input:  1,3,5,6,7,8 Output: 1,2,3,4,5,6,7,8*/
 
+function pipeFix(n){
+  let arr = []
+  for(let i = n[0]; i <= n[n.length-1];i++){
+    arr.push(i)
+    }
+  return arr
+}
