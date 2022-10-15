@@ -5,3 +5,7 @@ The order of the sequence has to stay the same.*/
 function distinct(a) {
   return [...new Set(a)];
 }
+
+const distinct = a => a.filter((item, index) => a.indexOf(item) === index);
+
+
