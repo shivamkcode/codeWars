@@ -5,3 +5,7 @@ function main(verb, noun){
   return verb + noun
 }
 
+function main(verb, noun) {
+  if(arguments.length > 1)
+    return verb.trim() + ' ' + noun.trim();
+}
