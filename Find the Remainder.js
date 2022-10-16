@@ -16,3 +16,7 @@ m = -1
 result = 0 (remainder of `0 / -1`)
 */
 
+function remainder(n, m){
+  // Divide the larger argument by the smaller argument and return the remainder
+  return n > m ? n%m : m%n
+}
