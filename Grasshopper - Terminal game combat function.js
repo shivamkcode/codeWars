@@ -4,3 +4,6 @@ function combat(health, damage) {
     return (health -= damage) > 0 ? health: 0
 }
 
+function combat(health, damage) {
+    return health < damage ? 0: health - damage
+}
