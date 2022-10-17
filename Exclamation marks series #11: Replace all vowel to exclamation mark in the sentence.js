@@ -6,3 +6,8 @@ replace("!Hi! Hi!") === "!H!! H!!"
 replace("aeiou") === "!!!!!"
 replace("ABCDE") === "!BCD!"*/
 
+function replace(s){
+  //coding and coding....
+  let vowels = 'AEIOUaeiou'
+  return s.split('').map(x => vowels.includes(x) ? '!' : x).join('')
+}
