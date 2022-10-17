@@ -10,3 +10,13 @@ Get rid of them. Only the ending ones.
 -1050 -> -105
 Zero alone is fine, don't worry about it. Poor guy anyway*/
 
+function noBoringZeros(n) {
+    while (Math.abs(n) > 9 && n % 10 === 0) n /= 10
+    return n
+}
+
+function noBoringZeros(n) {
+  while(n%10==0 && n!=0){n/=10;}
+  return n;
+}
+
