@@ -20,3 +20,6 @@ function noBoringZeros(n) {
   return n;
 }
 
+function noBoringZeros(n) {
+  return n % 10 || n === 0 ? n : noBoringZeros(n / 10);
+}
