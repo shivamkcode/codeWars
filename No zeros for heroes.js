@@ -16,10 +16,24 @@ function noBoringZeros(n) {
 }
 
 function noBoringZeros(n) {
-  while(n%10==0 && n!=0){n/=10;}
-  return n;
+    while (n%10 == 0 && n != 0) {
+        n /= 10;
+    }
+    return n;
 }
 
 function noBoringZeros(n) {
-  return n % 10 || n === 0 ? n : noBoringZeros(n / 10);
+    return n % 10 || n === 0 ? n: noBoringZeros(n / 10);
+}
+
+function noBoringZeros(x) {
+    let a = `${x}`.split('');
+    for (let i = a.length -1; i >= 0; i--) {
+        if (a[i] == 0) {
+            a.pop()
+        } else {
+            break
+        }
+    }
+    return Number(a.join(''))
 }
