@@ -2,3 +2,10 @@
 
 Can you figure out what's wrong here?*/
 
+function swapValues(args) {
+  return args.reverse()
+}
+
+function swapValues() {
+  return arguments[0].reverse();
+}
