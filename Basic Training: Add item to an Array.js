@@ -9,3 +9,4 @@ websites.push('codewars')
 
 websites[0]="codewars";
 
+{ websites.length=1; websites.fill("codewars"); }
