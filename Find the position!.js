@@ -9,3 +9,7 @@ function position(letter) {
     let pos = alphabet.indexOf(letter) + 1
     return `Position of alphabet: ${pos}`
 }
+
+function position(letter) {
+  return `Position of alphabet: ${letter.charCodeAt() - 96}`
+}
