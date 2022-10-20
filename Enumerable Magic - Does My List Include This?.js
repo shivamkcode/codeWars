@@ -8,6 +8,10 @@ function include(arr, item) {
     return arr.indexOf(item) !== -1;
 }
 
-function include(arr, item){
-  return arr.some(n=>n===item);
+function include(arr, item) {
+    return arr.some(n=>n === item);
+}
+
+function include(arr, item) {
+    return item == arr.find(el => el === item);
 }
