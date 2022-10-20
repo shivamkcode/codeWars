@@ -7,3 +7,7 @@ function include(arr, item) {
 function include(arr, item) {
     return arr.indexOf(item) !== -1;
 }
+
+function include(arr, item){
+  return arr.some(n=>n===item);
+}
