@@ -11,3 +11,13 @@ Some cases:
 function multipleOfIndex(array) {
     return array.filter((x, i) => x%i === 0)
 }
+
+function multipleOfIndex(arr) {
+    let arr1 = [];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] % i == 0) {
+            arr1.push(arr[i]);
+        }
+    }
+    return arr1;
+}
