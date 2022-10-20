@@ -11,3 +11,8 @@ If the array is empty or the array has only one element the result should be 0 (
 function sumOfDifferences(arr) {
     return arr.length > 1 ? Math.max(...arr) - Math.min(...arr): 0
 }
+
+const sumOfDifferences = arr => arr
+.sort((a, b) => b - a)
+.map((a, i) => a - arr[i + 1] || 0)
+.reduce((a, b) => a + b, 0);
