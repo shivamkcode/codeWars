@@ -8,3 +8,9 @@ Provide output in this format: For dates in the future: "You are ... year(s) old
 
 Good Luck!*/
 
+function calculateAge(dob, year) {
+    let years = Math.abs(dob - year) === 1 ? 'year': 'years'
+    return year > dob ? `You are ${year - dob} ${years} old.`:
+    year === dob ? `You were born this very year!`: `You will be born in ${dob - year} ${years}.`
+}
+
