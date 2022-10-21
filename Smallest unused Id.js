@@ -8,3 +8,11 @@ Note: The given array of used IDs may be unsorted. For test reasons there may be
 
 Go on and code some pure awesomeness!*/
 
+function nextId(stuff) {
+    //this will be awesome!
+    for (let i = 0; i < stuff.length + 1; i++) {
+        if (stuff.indexOf(i) == -1)
+            return i;
+    }
+}
+
