@@ -47,3 +47,8 @@ function popElement(arr) {
     return arr
 }
 
+const getLength = arr => arr.length;
+const getFirst = arr => arr[0];
+const getLast = arr => arr.pop();
+const pushElement = arr => [...arr, 1];
+const popElement = arr => arr.slice(0, -1);
