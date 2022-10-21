@@ -3,3 +3,7 @@
 Example:    
 5.5589 is rounded 5.56   
 3.3424 is rounded 3.34*/
+
+function twoDecimalPlaces(n) {
+  return +n.toFixed(2)
+}
