@@ -41,9 +41,9 @@ function answer3() {
 
 
 // Just joking :P
-x=0
-Dad=_=>x++<3?'Dad':''
-Bee=_=>x++<3?'Bee':''
-banana=_=>x++<3?'banana':''
-answer1=answer2=_=>'no'
-answer3=_=>'yes'
+x = 0
+Dad = _=>x++<3?'Dad': ''
+Bee = _=>x++<3?'Bee': ''
+banana = _=>x++<3?'banana': ''
+answer1 = answer2 = _=>'no'
+answer3 = _=>'yes'
