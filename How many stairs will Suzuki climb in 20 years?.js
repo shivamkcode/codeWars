@@ -27,3 +27,13 @@ function stairsIn20(s) {
     var newArr = [].concat(...arr)
     return newArr.reduce((a, b) => a+b)*20
 }
+
+function stairsIn20(stairs) {
+    let total = 0;
+    for (value of stairs) {
+        for (num of value) {
+            total += num;
+        }
+    }
+    return total *= 20
+}
