@@ -5,3 +5,7 @@ distance between pillars (10 - 30 meters);
 width of the pillar (10 - 50 centimeters).
 Calculate the distance between the first and the last pillar in centimeters (without the width of the first and last pillar).*/
 
+function pillars(num, dist, width) {
+    return num === 1 ? 0: (num - 1) * dist * 100 + (num - 2) * width
+}
+
