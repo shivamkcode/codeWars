@@ -14,3 +14,10 @@ Examples
 
 '0' and '?' returns -1*/
 
+function sameCase(a, b) {
+    let small = 'abcdefghijklmnopqrstuvwxyz'
+    let caps = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    return !small.includes(a) && !caps.includes(a) || !small.includes(b) && !caps.includes(b) ? -1:
+    small.includes(a) && small.includes(b) ? 1:
+    caps.includes(a) && caps.includes(b) ? 1: 0
+}
