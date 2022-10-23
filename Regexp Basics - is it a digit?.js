@@ -5,3 +5,7 @@ String.prototype.digit = function() {
     let digit = '0123456789'.split('')
     return digit.includes(this.toString())
 };
+
+String.prototype.digit = function() {
+    return /^\d$/.test(this);
+};
