@@ -9,3 +9,11 @@ String.prototype.digit = function() {
 String.prototype.digit = function() {
     return /^\d$/.test(this);
 };
+
+String.prototype.digit = function() {
+    return /^[0-9]$/.test(this);
+};
+
+String.prototype.digit = function() {
+    return (this.length === 1) && (this[0] >= '0') && (this[0] <= '9');
+};
