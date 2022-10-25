@@ -19,21 +19,36 @@ function whatday(n) {
     n === 7 ? 'Saturday': "Wrong, please enter a number between 1 and 7"
 }
 
-function whatday(num) { 
-  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  return days[num - 1] || 'Wrong, please enter a number between 1 and 7';
+function whatday(num) {
+    var days = ["Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"];
+    return days[num - 1] || 'Wrong, please enter a number between 1 and 7';
 }
 
-function whatday(num) { 
-  let days = {
-    1: 'Sunday',
-    2: 'Monday',
-    3: 'Tuesday',
-    4: 'Wednesday',
-    5: 'Thursday',
-    6: 'Friday',
-    7: 'Saturday'
-  }
-  return days[ num ] || 'Wrong, please enter a number between 1 and 7';
+function whatday(num) {
+    let days = {
+        1: 'Sunday',
+        2: 'Monday',
+        3: 'Tuesday',
+        4: 'Wednesday',
+        5: 'Thursday',
+        6: 'Friday',
+        7: 'Saturday'
+    }
+    return days[num] || 'Wrong, please enter a number between 1 and 7';
 }
 
+function whatday(num) {
+    return ['Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'][num-1] || 'Wrong, please enter a number between 1 and 7'
+}
