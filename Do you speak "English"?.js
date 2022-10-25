@@ -10,3 +10,7 @@ function spEng(sentence) {
     let en = 'english'
     return sentence.toLowerCase().includes(en)
 }
+
+function spEng(s) {
+    return s.toLowerCase().indexOf('english')!=-1
+}
