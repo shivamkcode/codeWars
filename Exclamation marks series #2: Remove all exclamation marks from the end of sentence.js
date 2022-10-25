@@ -15,3 +15,6 @@ function remove(s) {
     return s;
 }
 
+function remove(s) {
+    return s.charAt(s.length - 1) === '!' ? remove(s.slice(0, s.length - 1)): s;
+}
