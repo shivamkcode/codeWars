@@ -14,3 +14,7 @@ function spEng(sentence) {
 function spEng(s) {
     return s.toLowerCase().indexOf('english')!=-1
 }
+
+function spEng(s) {
+    return /english/i.test(s)
+}
