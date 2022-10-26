@@ -10,3 +10,15 @@ sumMul(4, 123) ==> 4 + 8 + 12 + ... = 1860
 sumMul(4, -7)  ==> "INVALID"*/
 
 
+function sumMul(n, m) {
+    if (m <= 0) {
+        return "INVALID"
+    }
+    let sum = 0
+    for (let i = n; i < m; i++)
+        if (i % n === 0) {
+        sum += i
+    }
+    return sum
+}
+
