@@ -12,3 +12,7 @@ isDigit("  3   5")
 isDigit("3 5")
 isDigit("zero")*/
 
+function isDigit(s) {
+    return s == parseFloat(s)
+}
+
