@@ -100,3 +100,8 @@ function howManydays(month) {
                         }
                         return 31
                 }
+
+
+                const howManydays = month =>
+
+                new Date(2022, month, 0).getUTCDate(`switch :)`)
