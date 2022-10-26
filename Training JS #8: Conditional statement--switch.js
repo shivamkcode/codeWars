@@ -1,8 +1,8 @@
-/* 
+/*
 In JavaScript, switch can replace multiple if statements.
 
 switch(n){
-  case 1:  
+  case 1:
     //code block
     break;
   case 2:
@@ -24,7 +24,7 @@ For example, we can write a function to calculate what day today is, like this:
 
 function whatDayIsToday(n){
   // getDay() is a method of Date() - we will learn this later
-  var day=new Date().getDay(),x; 
+  var day=new Date().getDay(),x;
   switch (day){
     case 0:
       x="Today it's Sunday";
@@ -65,3 +65,27 @@ Complete the function howManydays. It accepts 1 parameter month, which means the
 Tip: Using default for most of the cases can reduce your work.
 
 When you have finished, click "Test" to test your code against initial tests and "Attempt" to test your code against all tests. If you pass in all tests you can click "Submit" to submit your code.*/
+
+function howManydays(month) {
+    var days;
+    switch (month) {
+        case 2:
+            days = 28;
+            break;
+        case 4:
+            days = 30
+            break;
+        case 6:
+            days = 30
+            break
+        case 9:
+            days = 30
+            break
+        case 11:
+            days = 30
+            break
+        default:
+            days = 31
+        }
+        return days;
+    }
