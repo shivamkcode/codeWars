@@ -16,3 +16,5 @@ function isDigit(s) {
     return s == parseFloat(s)
 }
 
+const isDigit = str => !!str.trim() && !isNaN(str);
+
