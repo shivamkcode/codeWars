@@ -13,3 +13,13 @@ lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"); ===> 0
 
 lowercaseCount("abcdefghijklmnopqrstuvwxyz*/
 
+function lowercaseCount(str) {
+    let lower = 'abcdefghijklmnopqrstuvwxyz'
+    let count = 0
+    str.split('').forEach(x => lower.includes(x) ? count++: count)
+    return count
+}
+
+function lowercaseCount(str) {
+    return (str.match(/[a-z]/g) || []).length
+}
