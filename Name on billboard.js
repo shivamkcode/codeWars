@@ -22,3 +22,4 @@ function billboard(name, price = 30) {
     return name.repeat(price).length;
 }
 
+const billboard = (name, price = 30) => +(name.length / (1 / price))
