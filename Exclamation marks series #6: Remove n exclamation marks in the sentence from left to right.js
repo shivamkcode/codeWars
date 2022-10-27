@@ -14,3 +14,10 @@ remove("!!!Hi !!hi!!! !hi",3) === "Hi !!hi!!! !hi"
 remove("!!!Hi !!hi!!! !hi",5) === "Hi hi!!! !hi"
 remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"*/
 
+function remove(s, n) {
+    while (n) {
+        s = s.replace("!", "");
+        n--;
+    }
+    return s;
+}
