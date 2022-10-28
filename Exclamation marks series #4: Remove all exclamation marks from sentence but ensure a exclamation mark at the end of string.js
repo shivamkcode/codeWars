@@ -21,3 +21,11 @@ function remove (string) {
 }
 
 const remove = s => s.split("!").join("") + "!";
+
+function remove(s) {
+    //coding and coding....
+    s = s.split('!');
+    return s.concat('!').join('');
+
+}
+
