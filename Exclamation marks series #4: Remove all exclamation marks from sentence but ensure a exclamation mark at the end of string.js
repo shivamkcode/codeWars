@@ -29,3 +29,4 @@ function remove(s) {
 
 }
 
+const remove = (str) => str.split('!').join('').concat('!')
