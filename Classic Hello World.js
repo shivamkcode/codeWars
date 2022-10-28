@@ -24,3 +24,8 @@ class Solution {}
 Solution.main = function() {
     console.log("Hello World!");
 }
+
+Solution = {}
+Solution.main = () => {
+    console.log('Hello World!')
+}
