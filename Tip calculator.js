@@ -33,3 +33,12 @@ const calculateTip = (amount, rating) => {
 
     return rating in TIPS ? Math.ceil(TIPS[rating] * amount): "Rating not recognised";
 };
+
+let calculateTip = (a, r) => {
+    const i = ['terrible',
+        'poor',
+        'good',
+        'great',
+        'excellent'].indexOf(r.toLowerCase());
+    return i === -1 ? "Rating not recognised": Math.ceil(i*a*.05);
+}
