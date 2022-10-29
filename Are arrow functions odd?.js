@@ -3,3 +3,5 @@
 [1, 2, 3, 4, 5]  -->  [1, 3, 5]
 [2, 4, 6]        -->  []*/
 
+const odds = values => values.filter(x => x%2 !== 0)
+// arrow it
