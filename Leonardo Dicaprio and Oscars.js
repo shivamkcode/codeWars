@@ -13,3 +13,17 @@ function leo(oscar) {
     oscar === 88 ? "Leo finally won the oscar! Leo is happy":
     oscar === 86 ? "Not even for Wolf of wallstreet?!": "When will you give Leo an Oscar?"
 }
+
+function leo(oscar) {
+    switch (oscar) {
+        case 88:
+            return "Leo finally won the oscar! Leo is happy";
+            break;
+        case 86:
+            return "Not even for Wolf of wallstreet?!";
+            break;
+        default:
+            if (oscar < 88) return "When will you give Leo an Oscar?";
+            else return "Leo got one already!";
+        }
+    }
