@@ -14,3 +14,10 @@ const guessBlue = (blueStart, redStart, bluePulled, redPulled) => {
     return (blueStart - bluePulled) / ((blueStart - bluePulled) + (redStart - redPulled));
 };
 
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+    var blueLeft = blueStart - bluePulled;
+    var redLeft = redStart - redPulled;
+    var allLeft = blueLeft + redLeft;
+
+    return blueLeft/allLeft;
+}
