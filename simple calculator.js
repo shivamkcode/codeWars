@@ -11,3 +11,9 @@ calculator(1,2,"+"); //=> result will be 3
 calculator(1,2,"&"); //=> result will be "unknown value"
 calculator(1,"k","*"); */
 
+function calculator(a, b, sign) {
+    return typeof(a) === 'number' && typeof(b) === 'number'? (sign === '+' ? a + b:
+        sign === '*' ? a * b:
+        sign === '-' ? a - b:
+        sign === '/' ? a / b: 'unknown value'): 'unknown value'
+}
