@@ -26,7 +26,7 @@ For the example above, the running order of the code is:
                   -------------------------------------------
                   |                 true                    |
 var sum=0,num=1  --->  num<=100 ?  ------> code block---> num++
-                                |  
+                                |
                            false|
                        loop terminated
 When you need to traverse an array, you can use the for loop to access each element using its index. Here's an example:
@@ -45,3 +45,13 @@ The function pickIt accepts 1 parameter, arr, which is an array of numbers. We n
 
 I've defined two arrays odd and even in the function, and also wrote the return statement. Your work is to write a for loop.*/
 
+function pickIt(arr) {
+    var odd = [],
+    even = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            even.push(arr[i])
+        } else odd.push(arr[i])
+    }
+    return [odd,even];
+}
