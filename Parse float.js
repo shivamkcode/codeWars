@@ -4,3 +4,6 @@ function parseF(s) {
     return /\d/.test(s)? +s: null;
 }
 
+function parseF(s) {
+    return isNaN(parseFloat(s)) ? null: parseFloat(s);
+}
