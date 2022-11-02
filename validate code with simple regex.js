@@ -3,5 +3,8 @@
 You can assume the input will always be a number.*/
 
 function validateCode (code) {
-  return String(code).startsWith('1') || String(code).startsWith('2') || String(code).startsWith('3') 
+    return String(code).startsWith('1') || String(code).startsWith('2') || String(code).startsWith('3')
 }
+
+function validateCode (code) {
+    return /^[123]/.test(code)}
