@@ -9,8 +9,25 @@ Anything greater than 1 or less than 0.6	"F"
 */
 
 function grader(score) {
-  return score > 1 || score < 0.6 ? 'F' :
-  score >= 0.9 ? 'A' :
-  score >= 0.8 ? 'B' :
-  score >= 0.7 ? 'C' : 'D'
+    return score > 1 || score < 0.6 ? 'F':
+    score >= 0.9 ? 'A':
+    score >= 0.8 ? 'B':
+    score >= 0.7 ? 'C': 'D'
 }
+
+const grader = s => {
+    switch (true) {
+        case (s > 1):
+            return 'F'
+            case (s >= 0.9):
+                return 'A'
+                case (s >= 0.8):
+                    return 'B'
+                    case (s >= 0.7):
+                        return 'C'
+                        case (s >= 0.6):
+                            return 'D'
+                            default:
+                                return 'F'
+                            }
+                    }
