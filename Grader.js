@@ -8,3 +8,9 @@ Anything greater than 1 or less than 0.6	"F"
 0.6 or greater	"D"
 */
 
+function grader(score) {
+  return score > 1 || score < 0.6 ? 'F' :
+  score >= 0.9 ? 'A' :
+  score >= 0.8 ? 'B' :
+  score >= 0.7 ? 'C' : 'D'
+}
