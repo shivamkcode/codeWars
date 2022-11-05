@@ -18,3 +18,7 @@ function amIWilson(p) {
     const d = (fac(p-1n) + 1n);
     return !(d % (p * p));
 }
+
+const amIWilson = num => (factorial(num - 1) + 1) / (num * num) % 1 === 0;
+
+const factorial = x => x <= 1 ? 1 : x * factorial(x - 1);
