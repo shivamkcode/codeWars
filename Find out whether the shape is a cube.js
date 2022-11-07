@@ -16,3 +16,6 @@ var cubeChecker = function(volume, side) {
     return volume <= 0 ? false: side**3 == volume
 };
 
+var cubeChecker = function(volume, side){
+  return Math.pow(side, 3) === volume && side > 0;
+};
