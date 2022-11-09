@@ -8,3 +8,6 @@ Example
 all((1, 2, 3, 4, 5), greater_than_9) -> false
 all((1, 2, 3, 4, 5), less_than_9)    -> */
 
+function all(arr, fun) {
+    return arr.filter(x => fun(x)).length === arr.length
+}
