@@ -11,3 +11,8 @@ all((1, 2, 3, 4, 5), less_than_9)    -> */
 function all(arr, fun) {
     return arr.filter(x => fun(x)).length === arr.length
 }
+
+function all(arr, fun) {
+    return arr.every(fun)
+}
+
