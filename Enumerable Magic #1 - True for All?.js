@@ -16,3 +16,9 @@ function all(arr, fun) {
     return arr.every(fun)
 }
 
+function all(arr, fun) {
+    return arr.every(n => {
+        if (fun(n)) return true;
+        if (!arr.length) return true;
+    })
+}
