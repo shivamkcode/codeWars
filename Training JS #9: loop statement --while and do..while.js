@@ -15,7 +15,7 @@ Do you feel a bit tired? We can use a loop statement to do it:
 
 function sum1_100(){
   var sum=0,num=1;    //Initialize two variables sum and num
-  while (num<=100){   //Determine the expression in brackets, while true, 
+  while (num<=100){   //Determine the expression in brackets, while true,
                       //run the code block one time, while false, break the loop
     sum=sum+num;      //Each time num will be added to the current value of sum
                       //It can be simplified as:  sum+=num
@@ -50,15 +50,22 @@ You need to write a loop statement within the function that loops n times. Each 
 
 Finally, return the padded string.*/
 
-function padIt(str,n){
-  while(n>0){
-    if(n%2 === 0) {
-      str = str + "*";
-    }else{
-      str = "*" + str;
+function padIt(str, n) {
+    while (n > 0) {
+        if (n%2 === 0) {
+            str = str + "*";
+        } else {
+            str = "*" + str;
+        }
+        n --;
     }
-    n --;
-  }
-  return str;
+    return str;
+}
+
+function padIt(str, n) {
+    while (n > 0) {
+        str = n-- % 2 ? '*' + str: str + '*';
+    }
+    return str;
 }
 
