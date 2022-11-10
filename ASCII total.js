@@ -12,3 +12,10 @@ function uniTotal (string) {
 
 const uniTotal = str => [...str].reduce((acc, char) => acc + char.charCodeAt(0), 0);
 
+function uniTotal(str) {
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+    count += str.charCodeAt(i);
+  }
+  return count;
+}
