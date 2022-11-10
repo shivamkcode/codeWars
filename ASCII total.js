@@ -4,3 +4,9 @@ examples:
 
 uniTotal("a") == 97 uniTotal("aaa") == 291*/
 
+function uniTotal (string) {
+    let sum = 0
+    string.split('').forEach(x => sum += x.charCodeAt(0))
+    return sum
+}
+
