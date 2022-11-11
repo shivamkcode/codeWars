@@ -18,3 +18,7 @@ Examples
 function integrate(c, e) {
     return `${c/(e+1)}x^${e+1}`
 }
+
+const integrate = (coefficient, exponent) => {
+    return coefficient / (exponent + 1) + 'x^' + (exponent + 1);
+}
