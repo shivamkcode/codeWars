@@ -26,3 +26,11 @@ function quadratic(x1, x2) {
         (x1 * x2)]
 }
 
+function quadratic(x1, x2) {
+    let r = [1]
+    const f = -x1 + (-x2)
+    const s = -x1 * (-x2)
+    return [...r,
+        f,
+        s];
+}
