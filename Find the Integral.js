@@ -15,3 +15,6 @@ Examples
 40, 3  -->  "10x^4"
 90, 2  -->  "30x^3"*/
 
+function integrate(c, e) {
+    return `${c/(e+1)}x^${e+1}`
+}
