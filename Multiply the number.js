@@ -10,3 +10,7 @@ function multiply(number) {
     let l = number > 0 ? String(number).length: String(number).length -1
     return number * (5**l)
 }
+
+function multiply(number) {
+    return number * Math.pow(5, Math.abs(number).toString().length);
+}
