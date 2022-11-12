@@ -2,6 +2,9 @@
 
 For example (Input --> Output)
 
-"Yes" --> "Yes?" 
+"Yes" --> "Yes?"
 "No?" --> "No?"*/
 
+function ensureQuestion(s) {
+    return s.endsWith('?') ? s: s + '?'
+}
