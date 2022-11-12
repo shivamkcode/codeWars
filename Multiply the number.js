@@ -6,3 +6,7 @@ multiply(200)==25000 // 200 * 5³
 multiply(0)==0 // 0 * 5¹
 multiply(-3)==-15 // -3 * 5¹*/
 
+function multiply(number) {
+    let l = number > 0 ? String(number).length: String(number).length -1
+    return number * (5**l)
+}
