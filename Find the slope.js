@@ -14,3 +14,12 @@ const slope = ([x1, y1, x2, y2]) => {
     return isFinite(result) ? `${result}`: 'undefined'
 }
 
+function slope(points) {
+    let dx = points[2] - points[0],
+    dy = points[3] - points[1]
+
+    if (dx == 0)
+        return 'undefined'
+
+    return (dy/dx) + ''
+}
