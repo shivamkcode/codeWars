@@ -9,3 +9,8 @@ For an undefined slope (division by 0), return undefined . Note that the "undefi
    d:y2
 Assume that [a,b,c,d] and the answer are all integers (no floating numbers!).*/
 
+const slope = ([x1, y1, x2, y2]) => {
+    const result = (y2 - y1) / (x2 - x1)
+    return isFinite(result) ? `${result}`: 'undefined'
+}
+
