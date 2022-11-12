@@ -14,3 +14,9 @@ function multiply(number) {
 function multiply(number) {
     return number * Math.pow(5, Math.abs(number).toString().length);
 }
+
+function multiply(number) {
+    //your code here
+    let numStr = number.toString().replace("-", "");
+    return number* Math.pow(5, numStr.length)
+}
