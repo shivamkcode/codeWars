@@ -15,3 +15,14 @@ Output: "odd"
 Input: [0, -1, -5]
 Output: "even"*/
 
+function oddOrEven(array) {
+    let sum = 0
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === []) {
+            sum += 0
+        } else {
+            sum += array[i]
+        }
+    }
+    return sum % 2 === 0 ? 'even': 'odd'
+}
