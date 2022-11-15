@@ -10,3 +10,12 @@ Please keep in mind that the test cases ensure that the number of people in the 
 
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.*/
 
+let number = function(bS) {
+    let getIn = 0
+    let getOff = 0
+    for (let i = 0; i < bS.length; i++) {
+        getIn += bS[i][0]
+        getOff += bS[i][1]
+    }
+    return getIn - getOff
+}
