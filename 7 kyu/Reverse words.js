@@ -13,3 +13,5 @@ function reverseWords(str) {
     //split words into seperate arrays
     return str.split("").reverse().join("").split(" ").reverse().join(" ");
 }
+
+var reverseWords = s=>s.replace(/\S+/g, v=>[...v].reverse().join``)
