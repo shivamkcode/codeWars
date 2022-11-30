@@ -7,3 +7,7 @@ Examples
 function removeUrlAnchor(url) {
     return url.slice(0, url.indexOf('#') !== -1? url.indexOf('#'): url.length)
 }
+
+function removeUrlAnchor(url) {
+    return url.split('#')[0];
+}
