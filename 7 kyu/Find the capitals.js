@@ -11,3 +11,13 @@ var capitals = function (word) {
     word.split('').forEach((x, i) => al.includes(x) ? arr.push(i): i)
     return arr
 };
+
+
+//Does not work if word contains numbers
+var capitals = function (word) {
+    var caps = [];
+    for (var i = 0; i < word.length; i++) {
+        if (word[i].toUpperCase() == word[i]) caps.push(i);
+    }
+    return caps;
+};
