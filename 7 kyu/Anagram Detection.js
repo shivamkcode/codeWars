@@ -12,3 +12,5 @@ Examples
 var isAnagram = function(test, original) {
     return test.toLowerCase().split('').sort().join('') === original.toLowerCase().split('').sort().join('')
 };
+
+let isAnagram = (a, b) => [a, b].map(i=> i.toLowerCase``.split``.sort``.join``).reduce((a, b)=> a == b)
