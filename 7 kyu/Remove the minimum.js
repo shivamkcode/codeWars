@@ -14,7 +14,12 @@ Examples
 * Input: [2,2,1,2,1], output = [2,2,2,1]*/
 
 function removeSmallest(numbers) {
-  const min = Math.min.apply(this, numbers);
-  return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
+    const min = Math.min.apply(this, numbers);
+    return numbers.filter((num, idx, arr) => idx !== arr.indexOf(min));
 }
 
+function removeSmallest(numbers) {
+    let arr = numbers.slice(); //copy the array
+    arr.splice(arr.indexOf(Math.min.apply(null, arr)), 1)
+    return arr;
+}
