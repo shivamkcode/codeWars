@@ -9,3 +9,7 @@ Examples
 [17, 17, 3, 17, 17, 17, 17] ==> 3
 */
 
+function stray(n) {
+    let num = n.filter((x, i) => n.indexOf(x) === n.lastIndexOf(x))
+    return num[0]
+}
