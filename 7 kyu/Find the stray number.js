@@ -13,3 +13,7 @@ function stray(n) {
     let num = n.filter((x, i) => n.indexOf(x) === n.lastIndexOf(x))
     return num[0]
 }
+
+function stray(numbers) {
+    return numbers.reduce((x, y) => x ^ y);
+}
