@@ -9,3 +9,12 @@ Examples (input --> output)
 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
 Note you should only return a number, the count of divisors. The numbers between parentheses are shown only for you to see which numbers are counted in each case.*/
 
+function getDivisorsCnt(n) {
+    let arr = []
+    let i = 1
+    while (i <= n) {
+        if (n % i === 0) arr.push(i)
+        i++
+    }
+    return arr.length
+}
