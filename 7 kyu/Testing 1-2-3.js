@@ -12,3 +12,9 @@ Examples: (Input --> Output)
 var number = function(array) {
     return array.map((x, i) =>`${i+1}: ${x}`)
 }
+
+var number = function(array) {
+    return array.map(function (line, index) {
+        return (index + 1) + ": " + line;
+    });
+}
