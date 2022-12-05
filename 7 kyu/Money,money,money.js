@@ -6,9 +6,9 @@ Note to Tax: not the invested principal is taxed, but only the year's accrued in
 
 Example:
 
-  Let P be the Principal = 1000.00      
-  Let I be the Interest Rate = 0.05      
-  Let T be the Tax Rate = 0.18      
+  Let P be the Principal = 1000.00
+  Let I be the Interest Rate = 0.05
+  Let T be the Tax Rate = 0.18
   Let D be the Desired Sum = 1100.00
 
 
@@ -24,3 +24,11 @@ Your task is to complete the method provided and return the number of years 'Y' 
 
 Assumption: Assume that Desired Principal 'D' is always greater than the initial principal. However it is best to take into consideration that if Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.*/
 
+function calculateYears(p, i, t, d) {
+    let y = 0
+    while (d > p) {
+        p += (p * i - p * i * t)
+        y++
+    }
+    return y
+}
