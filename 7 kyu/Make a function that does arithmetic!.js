@@ -11,3 +11,8 @@ A few examples:(Input1, Input2, Input3 --> Output)
 5, 2, "multiply" --> 10
 5, 2, "divide"   --> 2.5*/
 
+function arithmetic(a, b, operator) {
+    return operator === 'add' ? a + b:
+    operator === 'subtract' ? a - b:
+    operator === 'divide' ? a / b: a * b
+}
