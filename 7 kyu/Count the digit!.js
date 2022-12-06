@@ -7,7 +7,7 @@ Count the numbers of digits d used in the writing of all the k**2.
 Call nb_dig (or nbDig or ...) the function taking n and d as parameters and returning this count.
 
 Examples:
-n = 10, d = 1 
+n = 10, d = 1
 the k*k are 0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100
 We are using the digit 1 in: 1, 16, 81, 100. The total count is then 4.
 
@@ -17,3 +17,10 @@ the k*k that contain the digit 1 are:
 So there are 11 digits 1 for the squares of numbers between 0 and 25.
 Note that 121 has twice the digit 1.*/
 
+function nbDig(n, d) {
+    var res = 0;
+    for (var g = 0; g <= n; g++) {
+        var square = (g*g+"").split("");
+        square.forEach((s)=>s == d?res++: null)
+    }return res;
+}
