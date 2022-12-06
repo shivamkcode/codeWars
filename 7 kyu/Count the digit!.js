@@ -24,3 +24,6 @@ function nbDig(n, d) {
         square.forEach((s)=>s == d?res++: null)
     }return res;
 }
+
+const nbDig = (n, d) =>
+[...Array(++n)].map((_, idx) => idx ** 2).join(``).split(d).
