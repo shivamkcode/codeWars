@@ -19,4 +19,4 @@ var isValid = function(s) {
     return temp.length > 0 ? false: true;
 };
 
-console.log(isValid([(,[,),]]))
+console.log(isValid('([{}][])'))
