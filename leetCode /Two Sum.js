@@ -21,8 +21,8 @@ Input: nums = [3,3], target = 6
 Output: [0,1]*/
 
 const twoSum(nums,target){
-    let num
+    let num = 0
     nums.forEach((x,i) => (x + nums[i + 1]) == target ? num = i : num)
     return num
 }
-console.log()
+console.log([2,7,11,15],9)
