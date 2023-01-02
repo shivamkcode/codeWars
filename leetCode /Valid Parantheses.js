@@ -1,3 +1,5 @@
+
+
 var isValid = function(s) {
     if (s.length % 2 !== 0 ) return false;
     let str = s.trim().split('');
