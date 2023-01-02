@@ -23,6 +23,6 @@ Output: [0,1]*/
 function twoSum(nums,target){
     let num = 0
     nums.forEach((x,i) => (x + nums[i + 1]) === target ? num = i : num)
-    return num
+    return (num, num + 1)
 }
-console.log([2,7,11,15],9)
+console.log(twoSum([2,7,11,15],9))
