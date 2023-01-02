@@ -26,8 +26,10 @@ function maxSub(nums){
     for(let i=0; i<nums.length; i++){
         sum += nums[i]
         if(sum < max){
-            sum = max
-        }else if()
+            max = sum
+        }if(max < 0){
+            max = 0
+        }
         
     }
 }
