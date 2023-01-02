@@ -22,5 +22,7 @@ Output: [0,1]*/
 
 const twoSum(nums,target){
     let num
-    nums.forEach((x,i) => (x + nums[i + 1]) == target ? num )
+    nums.forEach((x,i) => (x + nums[i + 1]) == target ? num = i : num)
+    return num
 }
+console.log()
