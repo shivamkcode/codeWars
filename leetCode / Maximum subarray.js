@@ -20,6 +20,10 @@ Input: nums = [5,4,-1,7,8]
 Output: 23
 Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.*/
 
-
+function maxSub(nums){
+    let max = 0
+    let sum = nums[1]
+    
+}
 
 
