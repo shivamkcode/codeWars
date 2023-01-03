@@ -21,13 +21,14 @@ function generateParanth(n){
         if(l !== n){
             valid(s + '(',l + 1,r)
         }
-        if{
+        if(l > r){
             valid(s + ')',l,r + 1)
         }
     }
+    valid
     }
 
-const generateParentheses = n => {
+/*const generateParentheses = n => {
   const result = [];
   breathFirstSearch("", 0, 0);
   return result;
@@ -43,5 +44,5 @@ const generateParentheses = n => {
       breathFirstSearch(str + ")", left, right + 1);
     }
   }
-}
-console.log(generateParentheses(2))
+}*/
+console.log(generateParanth(2))
