@@ -11,7 +11,7 @@ Example 2:
 Input: n = 1
 Output: ["()"]*/
 
-function generateParanth(str){
+function generateParanth(n){
     let arr = []
     const isValid = str =>{
         let temp = []
