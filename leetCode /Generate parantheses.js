@@ -10,7 +10,7 @@ Example 2:
 
 Input: n = 1
 Output: ["()"]*/
-
+/*
 function generateParanth(n){
     let arr = []
     const isValid = s =>{
@@ -29,4 +29,23 @@ function generateParanth(n){
         
     }
     
-console.log
+console.log*/
+
+const generateParentheses = n => {
+  const result = [];
+  breathFirstSearch("", 0, 0);
+  return result;
+  function breathFirstSearch(str, left, right) {
+    if (left === n && right === n) {
+      result.push(str);
+      return;
+    }
+    if (left !== n) {
+      breathFirstSearch(str + "(", left + 1, right);
+    }
+    if (left > right) {
+      breathFirstSearch(str + ")", left, right + 1);
+    }
+  }
+}
+console.log(generateParentheses(5))
