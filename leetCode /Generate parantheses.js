@@ -23,11 +23,10 @@ Output: ["()"]*/
             if(i === ')'){
                 if(temp.pop() !== '(') return false
             }
-            return temp.length > 0 ? false : true
-        }
+        }return temp.length > 0 ? false : true
     }
     /*for(let i = 0; i < n; i++){
         
     }*/
     
-console.log(isValid('()()()'))
+console.log
