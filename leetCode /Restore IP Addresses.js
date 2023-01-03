@@ -22,6 +22,6 @@ function restoreIP(s){
     const valid = str =>{
         if(str === '0') true
         if(str[0] === '0') false
-        return parseInt(st)
+        return parseInt(str) <= 255
     }
 }
