@@ -10,3 +10,8 @@ Example 2:
 
 Input: n = 1
 Output: ["()"]*/
+
+function generateParanth(n){
+    let arr = []
+    for()
+}
