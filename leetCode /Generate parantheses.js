@@ -20,12 +20,13 @@ function generateParanth(n){
                 temp.push(i)
             }
             if(i === ')'){
-                if(temp.pop() !)
+                if(temp.pop() !== '(') return false
             }
+            return temp.length 
         }
     }
     for(let i = 0; i < n; i++){
         
     }
     }
-}
+}console.log()
