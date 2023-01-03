@@ -24,4 +24,5 @@ function restoreIP(s){
         if(str[0] === '0') false
         return parseInt(str) <= 255
     }
+    
 }
