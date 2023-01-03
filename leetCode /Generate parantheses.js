@@ -13,7 +13,7 @@ Output: ["()"]*/
 
 function generateParanth(n){
     let arr = []
-    function valid(s,left,right){
+    function valid(s,l,r){
         if(l === n && r === n){
             arr.push(s)
             return
@@ -25,24 +25,7 @@ function generateParanth(n){
             valid(s + ')',l,r + 1)
         }
     }
-    valid
+    valid('',0,0)
+    return arr
     }
-
-/*const generateParentheses = n => {
-  const result = [];
-  breathFirstSearch("", 0, 0);
-  return result;
-  function breathFirstSearch(str, left, right) {
-    if (left === n && right === n) {
-      result.push(str);
-      return;
-    }
-    if (left !== n) {
-      breathFirstSearch(str + "(", left + 1, right);
-    }
-    if (left > right) {
-      breathFirstSearch(str + ")", left, right + 1);
-    }
-  }
-}*/
-console.log(generateParanth(2))
+console.log(generateParanth(10))
