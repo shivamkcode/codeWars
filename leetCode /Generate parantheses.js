@@ -16,7 +16,12 @@ function generateParanth(n){
     const isValid = str =>{
         let temp = []
         for(let i of str){
-            if(i =)
+            if(i === '('){
+                temp.push(i)
+            }
+            if(i === ')'){
+                if(temp.pop() !)
+            }
         }
     }
     for(let i = 0; i < n; i++){
