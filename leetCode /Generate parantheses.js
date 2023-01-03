@@ -28,4 +28,4 @@ function generateParanth(n){
     valid('',0,0)
     return arr
     }
-console.log(generateParanth(10))
+console.log(generateParanth(100))
