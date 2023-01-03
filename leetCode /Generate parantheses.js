@@ -11,7 +11,7 @@ Example 2:
 Input: n = 1
 Output: ["()"]*/
 
-function generateParanth(n){
+function generateParanth(str){
     let arr = []
     const isValid = str =>{
         let temp = []
@@ -22,11 +22,11 @@ function generateParanth(n){
             if(i === ')'){
                 if(temp.pop() !== '(') return false
             }
-            return temp.length 
+            return temp.length > 0 ? false : true
         }
     }
-    for(let i = 0; i < n; i++){
+    /*for(let i = 0; i < n; i++){
         
+    }*/
     }
-    }
-}console.log()
+console.log(generateParanth('()()()'))
