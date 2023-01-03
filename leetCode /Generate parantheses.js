@@ -13,7 +13,8 @@ Output: ["()"]*/
 
 function generateParanth(n){
     let arr = []
-    const isValid = str => {
+    for(let i = 0; i < n; i++){
         
+    }
     }
 }
