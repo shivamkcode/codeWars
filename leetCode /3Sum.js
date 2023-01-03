@@ -22,3 +22,22 @@ Example 3:
 Input: nums = [0,0,0]
 Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.*/
+
+
+function threeSum(nums) {
+    let arr = []
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = 0; j < nums.length; j++) {
+            for (let k = 0; k < nums.length; k++) {
+                if (i !== j && i !== k && j !== k) {
+                    if (nums[i] + nums[j] + nums[k] === 0) {
+                        arr.push([nums[i], nums[j], nums[k]])
+                    }
+                }
+            }
+        }
+    }
+    let newArr = arr.map(x => x.sort((a, b) => b - a)).map(x => String(x))
+    return newArr.filter((x, i) => newArr.indexOf(x) === i).map(x => x.split(','))
+}
+console.log(threeSum([-1, 0, 1, 2, -1, -4]))
