@@ -10,7 +10,7 @@ Example 2:
 
 Input: n = 1
 Output: ["()"]*/
-/*
+
 function generateParanth(n){
     let arr = []
     const isValid = s =>{
@@ -28,8 +28,6 @@ function generateParanth(n){
     for(let i = 0; i < n; i++){
         
     }
-    
-console.log*/
 
 const generateParentheses = n => {
   const result = [];
@@ -48,4 +46,4 @@ const generateParentheses = n => {
     }
   }
 }
-console.log(generateParentheses(5))
+console.log(generateParentheses(2))
