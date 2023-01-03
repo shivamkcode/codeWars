@@ -43,4 +43,4 @@ function restoreIP(s) {
     }
     return rVal;
 }
-console.log()
+console.log(restoreIP("25525511135"))
