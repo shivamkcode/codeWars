@@ -14,7 +14,13 @@ Output: ["()"]*/
 function generateParanth(n){
     let arr = []
     function valid(s,left,right){
-        if(l === n )
+        if(l === n && r === n){
+            arr.push(s)
+            return
+        }
+        if(l !== n){
+            valid()
+        }
     }
     }
 
