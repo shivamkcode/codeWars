@@ -11,9 +11,10 @@ Example 2:
 Input: n = 1
 Output: ["()"]*/
 
-function generateParanth(n){
-    let arr = []
-    const isValid = str =>{
+//function generateParanth(n){
+    //let arr = []
+    const isValid = s =>{
+        let str = s.trim().split('');
         let temp = []
         for(let i of str){
             if(i === '('){
@@ -28,5 +29,5 @@ function generateParanth(n){
     /*for(let i = 0; i < n; i++){
         
     }*/
-    }
-console.log(generateParanth('()()()'))
+    
+console.log(isValid('()()()'))
