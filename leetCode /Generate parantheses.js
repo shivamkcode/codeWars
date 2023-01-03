@@ -19,7 +19,10 @@ function generateParanth(n){
             return
         }
         if(l !== n){
-            valid()
+            valid(s + '(',l + 1,r)
+        }
+        if{
+            valid(s + ')',l,r + 1)
         }
     }
     }
