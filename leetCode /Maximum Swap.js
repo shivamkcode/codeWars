@@ -17,7 +17,11 @@ function maximumSwap(num) {
     num = String(num).split('')
     let arr = num
     arr.sort((a,b) => b - a)
-    for(let i = 0; i < num.length; i++)
+    for(let i = 0; i < num.length; i++){
+        if(arr[i] > num[i]){
+            let a = 
+        }
+    }
 }
 
 console.log(maximumSwap(2736))
