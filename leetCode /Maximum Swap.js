@@ -27,7 +27,7 @@ function maximumSwap(num) {
             }
         }
     }
-    return arr.length > 1 ? +(arr.join('')) : num
+    return arr.length > 1 ? arr : num
 }
 
 console.log(maximumSwap(2736))
