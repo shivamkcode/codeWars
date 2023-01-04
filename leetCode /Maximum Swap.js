@@ -19,8 +19,12 @@ function maximumSwap(num){
     let arr = []
     let a = String(num).split('')
     for(let i = 0; i < a.length; i++){
-        for(let j = 0; j < a.length)
+        for(let j = 0; j < a.length; j++){
+            let ar = a
+            arr.push[ar]
+        }
     }
+    return arr
 }
 
 console.log(maximumSwap(9973))
