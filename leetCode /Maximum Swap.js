@@ -17,7 +17,7 @@ function maximumSwap(num) {
     let arr = []
     let str = String(num).split('')
     for (let i = 0; i < str.length; i++) {
-        for (let j = 1; j < str.length; j++) {
+        for(let j = 1; j < str.length; j++) {
             if (str[j] > str[i] && j > i) {
                 let s = str,
                 r = s[i]
@@ -27,7 +27,7 @@ function maximumSwap(num) {
             }
         }
     }
-    return arr.length > 1 ? +(arr[0].join('')) : num
+    return arr.length > 1 ? arr : num
 }
 
 console.log(maximumSwap(2736))
