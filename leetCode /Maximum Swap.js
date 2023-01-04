@@ -16,10 +16,10 @@ Explanation: No swap.*/
 function maximumSwap(num) {
     num = String(num).split('')
     let arr = num.slice()
-    arr.sort((a, b) => b - a)
+    arr.sort((a, b) => b-a)
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > num[i]) {
-            let a = num.lastIndexOf(arr[i])
+            let a = num.lastIndexOf(arr[i]);
             [num[a],
                 num[i]] = [num[i],
                 num[a]]
