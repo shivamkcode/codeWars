@@ -14,3 +14,7 @@ Example 2:
 Input: num = 9973
 Output: 9973
 Explanation: No swap.*/
+
+function maximumSwap(num){
+    return Stnum
+}console.log(maximumSwap(2736))
