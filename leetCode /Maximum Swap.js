@@ -19,8 +19,8 @@ function maximumSwap(num) {
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
             if (str[j] > str[i]) {
-                let s = str,
-                r = s[i]
+                let s = str
+                let r = s[i]
                 s[i] = s[j]
                 s[j] = r
                 arr.push(s)
