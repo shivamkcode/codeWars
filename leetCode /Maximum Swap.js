@@ -21,10 +21,11 @@ function maximumSwap(num){
     for(let i = 0; i < a.length; i++){
         for(let j = 0; j < a.length; j++){
             let ar = a
-            arr.push[ar]
+            
+            arr.push(ar)
         }
     }
     return arr
 }
 
-console.log(maximumSwap(9973))
+console.log(maximumSwap(937))
