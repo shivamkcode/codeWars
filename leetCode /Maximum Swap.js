@@ -27,7 +27,7 @@ function maximumSwap(num) {
             }
         }
     }
-    return arr[0]
+    return +(arr[0].join(''))
 }
 
-console.log(maximumSwap(2736))
+console.log(maximumSwap(27369))
