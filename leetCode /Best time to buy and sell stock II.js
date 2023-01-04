@@ -32,4 +32,6 @@ function stocks(p){
             sum += p[i+1] - p[i]
         }
     }
+    return sum
 }
+console.log(stocks([7,1,5,3,6,4]))
