@@ -14,20 +14,9 @@ Output: 9973
 Explanation: No swap.*/
 
 function maximumSwap(num) {
-    let arr = []
-    let str = String(num).split('')
-    for (let i = 0; i < str.length; i++) {
-        for (let j = i + 1; j < str.length; j++) {
-            if (str[j] > str[i]) {
-                let s = str
-                let r = s[i]
-                s[i] = s[j]
-                s[j] = r
-                arr.push(s)
-            }
-        }
-    }
-    return arr.length > 1 ? +(arr[0].join('')) : num
+    num = String(num).split('')
+    let arr = num
+    retuen arr
 }
 
 console.log(maximumSwap(2736))
