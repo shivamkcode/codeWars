@@ -28,6 +28,8 @@ Explanation: There is no way to make a positive profit, so we never buy the stoc
 function stocks(p){
     let sum = 0
     for(let i = 0; i < p.length; i++){
-        
+        if(p[i] < p[i+1]){
+            sum += p[i+1] - p[i]
+        }
     }
 }
