@@ -22,10 +22,11 @@ function maximumSwap(num){
         for(let j = 1; j < a.length; j++){
             let ar = [],
             s = str,
-            r =
-            
+            r = s[i]
             if(str[j] > str[i]){
-                
+                s[i] = s[j]
+                s[j] = r
+                ar.push(s)
             }
             arr.push(ar)
         }
