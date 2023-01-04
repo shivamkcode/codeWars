@@ -23,6 +23,7 @@ function maximumSwap(num) {
             [num[a],num[i]] = [num[i], num[a]]
         }
     }
+    return +num.join('')
 }
 
 console.log(maximumSwap(2736))
