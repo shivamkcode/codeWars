@@ -16,5 +16,9 @@ Output: 9973
 Explanation: No swap.*/
 
 function maximumSwap(num){
-    return +(String(num).split('').sort((a,b) => b - a).join(''))
-}console.log(maximumSwap(2736))
+    let arr = []
+    let a = String(num).split('')
+    
+}
+
+console.log(maximumSwap(9973))
