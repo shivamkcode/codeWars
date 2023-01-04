@@ -16,5 +16,5 @@ Output: 9973
 Explanation: No swap.*/
 
 function maximumSwap(num){
-    return Stnum
+    return +(String(num).split('').sort((a,b) => b - a).join(''))
 }console.log(maximumSwap(2736))
