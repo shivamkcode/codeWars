@@ -26,5 +26,8 @@ Output: 0
 Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.*/
 
 function stocks(p){
-    
+    let sum = 0
+    for(let i = 0; i < p.length; i++){
+        
+    }
 }
