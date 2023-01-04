@@ -16,7 +16,8 @@ Explanation: No swap.*/
 function maximumSwap(num) {
     num = String(num).split('')
     let arr = num
-    retuen arr
+    arr.sort((a,b) => b - a)
+    for(let i = 0; i < num.length; i++)
 }
 
 console.log(maximumSwap(2736))
