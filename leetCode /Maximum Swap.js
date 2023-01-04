@@ -18,8 +18,8 @@ Explanation: No swap.*/
 function maximumSwap(num){
     let arr = []
     let str = String(num).split('')
-    for(let i = 0; i < a.length; i++){
-        for(let j = 1; j < a.length; j++){
+    for(let i = 0; i < str.length; i++){
+        for(let j = 1; j < str.length; j++){
             let ar = [],
             s = str,
             r = s[i]
@@ -28,7 +28,7 @@ function maximumSwap(num){
                 s[j] = r
                 ar.push(s)
             }
-            arr.push(ar)
+            arr.push(+(ar.join('')))
         }
     }
     return arr
