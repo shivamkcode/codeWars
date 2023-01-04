@@ -21,6 +21,7 @@ function maximumSwap(num) {
         if(arr[i] > num[i]){
             let a = num.lastIndexOf(arr[i])
             [num[a],num[i]] = [num[i], num[a]]
+            break
         }
     }
     return +num.join('')
