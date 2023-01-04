@@ -19,10 +19,12 @@ function maximumSwap(num){
     let arr = []
     let str = String(num).split('')
     for(let i = 0; i < a.length; i++){
-        for(let j = 0; j < a.length; j++){
+        for(let j = 1; j < a.length; j++){
             let ar = []
             let s = str
-            if()
+            if(str[j] > str[i]){
+                
+            }
             arr.push(ar)
         }
     }
