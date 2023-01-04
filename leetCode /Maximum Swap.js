@@ -17,11 +17,12 @@ Explanation: No swap.*/
 
 function maximumSwap(num){
     let arr = []
-    let a = String(num).split('')
+    let str = String(num).split('')
     for(let i = 0; i < a.length; i++){
         for(let j = 0; j < a.length; j++){
-            let ar = a
-            
+            let ar = []
+            let s = str
+            if()
             arr.push(ar)
         }
     }
