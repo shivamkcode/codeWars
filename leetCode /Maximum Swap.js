@@ -19,7 +19,8 @@ function maximumSwap(num) {
     arr.sort((a,b) => b - a)
     for(let i = 0; i < num.length; i++){
         if(arr[i] > num[i]){
-            let a = 
+            let a = num.lastIndexOf(arr[i])
+            [num[a],num[i]] = [num[i], num[a]]
         }
     }
 }
