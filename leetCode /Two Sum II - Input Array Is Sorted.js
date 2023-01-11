@@ -28,7 +28,9 @@ Explanation: The sum of -1 and 0 is -1*/
 function twoSums(nums,t){
     for(i of nums){
         for(j of nums){
-            if()
+            if(i + j === t){
+                return [w]
+            }
         }
     }
 }console.log(twoSums([2,3,4], 6))
