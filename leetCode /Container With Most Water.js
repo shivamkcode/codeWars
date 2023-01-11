@@ -19,3 +19,6 @@ Example 2:
 Input: height = [1,1]
 Output: 1*/
 
+function maxArea(h){
+    
+}console.log(maxArea([1,8,6,2,5,4,8,3,7]))
