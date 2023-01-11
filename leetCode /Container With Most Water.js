@@ -20,5 +20,9 @@ Input: height = [1,1]
 Output: 1*/
 
 function maxArea(h){
-    
+    let start = 0
+    let end = 0
+    for(let i = 0; i < h.length; i++){
+        
+    }
 }console.log(maxArea([1,8,6,2,5,4,8,3,7]))
