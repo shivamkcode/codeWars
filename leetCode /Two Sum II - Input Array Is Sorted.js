@@ -29,8 +29,8 @@ function twoSums(nums,t){
     for(let i=0; i<nums.length-1;i++){
         for(let j = 1; j<nums.length;j++){
             if(nums[i] + nums[j] === t){
-                return [i+1,]
+                return [i+1,j+1]
             }
         }
     }
-}console.log(twoSums([0,0,3,4], 0))
+}console.log(twoSums([2,7,11,15], 9))
