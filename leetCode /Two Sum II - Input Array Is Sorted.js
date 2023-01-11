@@ -25,4 +25,6 @@ Output: [1,2]
 Explanation: The sum of -1 and 0 is -1*/
 
 
-function twoSums(nums,)
+function twoSums(nums,t){
+    
+}console.log(twoSums([2,3,4], 6))
