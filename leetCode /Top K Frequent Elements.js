@@ -18,4 +18,4 @@ function topKFrequent(nums,k){
     
     //return Object.keys(counts).sort((a, b) => counts[b] - counts[a]).slice(0, k)
     return counts
-}console.log(topKFrequent([1,1,1,2,2,3,4],2))
+}console.log(topKFrequent([1,1,1,2,2,3],2))
