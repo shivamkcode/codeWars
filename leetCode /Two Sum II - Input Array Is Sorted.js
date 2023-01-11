@@ -29,7 +29,7 @@ function twoSums(nums,t){
     for(i of nums){
         for(j of nums){
             if(i + j === t){
-                return [w]
+                return [nums.indexOf(i)+1,nums.indexOf(j)+1]
             }
         }
     }
